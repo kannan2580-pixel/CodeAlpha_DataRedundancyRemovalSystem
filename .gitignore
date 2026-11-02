@@ -1,0 +1,45 @@
+# ==============================================================================
+# Git Ignore Rules for Data Redundancy Removal System
+# ==============================================================================
+
+# Local SQLite databases (prevent personal/local test data from being committed)
+*.db
+*.sqlite
+*.sqlite3
+redundancy.db
+
+# Python bytecode & cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secret files
+.env
+.env.*
+!.env.example
+*.local
+
+# IDE, Editor, and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
